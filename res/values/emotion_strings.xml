@@ -21,4 +21,8 @@
     <string name="emotionupdater">Updates</string>
     <string name="emotionupdater_summary">Stay up to date with the latest features and fixes</string>
 
+    <!-- Extra Info -->
+    <string name="lsextrainfo">Extra info</string>
+    <string name="lsextrainfo_summary">Display extra info for cpu, display, etc</string>
+
 </resources>

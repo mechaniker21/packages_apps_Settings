@@ -183,6 +183,14 @@
         <!-- Emotion OTA Update -->
         <activity android:name="com.emotion.ota.MainActivity"/>
 
+        <!-- Extra info -->
+        <activity android:name="com.android.settings.emotion.extrainfo.MainActivity"
+                  android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <!-- Wireless Controls -->
 
         <activity android:name="Settings$WirelessSettingsActivity"
