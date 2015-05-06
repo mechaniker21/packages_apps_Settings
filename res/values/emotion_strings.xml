@@ -25,4 +25,7 @@
     <string name="lsextrainfo">Extra info</string>
     <string name="lsextrainfo_summary">Display extra info for cpu, display, etc</string>
 
+    <!-- Dev Options Enabled by Default -->
+    <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
+
 </resources>
