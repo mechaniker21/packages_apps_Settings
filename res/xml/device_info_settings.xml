@@ -33,6 +33,15 @@
             <intent android:action="android.settings.SHOW_MANUAL" />
         </PreferenceScreen>
 
+        <!-- DU Extra Info -->
+        <PreferenceScreen android:key="extrainfo"
+                android:title="@string/duextrainfo"
+                android:summary="@string/duextrainfo_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.emotion.extrainfo.MainActivity" />
+        </PreferenceScreen>
+
         <!-- Legal Information -->
         <PreferenceScreen
                 android:key="container"
