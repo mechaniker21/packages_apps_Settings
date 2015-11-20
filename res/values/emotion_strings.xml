@@ -28,4 +28,8 @@
     <!-- Dev Options Enabled by Default -->
     <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
 
+    <!-- Emotion Control -->
+    <string name="emotion_control_title">Emotion Control</string>
+    <string name="emotion_control_category">Emotion</string>
+
 </resources>
