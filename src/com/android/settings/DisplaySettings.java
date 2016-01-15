@@ -118,6 +118,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String DASHBOARD_SWITCHES = "dashboard_switches";
     private static final String DASHBOARD_COLUMNS = "dashboard_columns";
     private static final String KEY_LIVEDISPLAY = "live_display";
+    private static final String DASHBOARD_FONT_STYLE = "dashboard_font_style";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
@@ -140,6 +141,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mWakeWhenPluggedOrUnplugged;
     private ListPreference mDashboardSwitches;
     private ListPreference mDashboardColumns;
+    private ListPreference mDashFontStyle;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
@@ -256,6 +258,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 getContentResolver(), Settings.System.DASHBOARD_COLUMNS, DashboardContainerView.mDashboardValue)));
         mDashboardColumns.setSummary(mDashboardColumns.getEntry());
         mDashboardColumns.setOnPreferenceChangeListener(this);
+
+        mDashFontStyle = (ListPreference) findPreference(DASHBOARD_FONT_STYLE);
+        mDashFontStyle.setOnPreferenceChangeListener(this);
+        mDashFontStyle.setValue(Integer.toString(Settings.System.getInt(getActivity()
+                .getContentResolver(), Settings.System.DASHBOARD_FONT_STYLE, 0)));
+        mDashFontStyle.setSummary(mDashFontStyle.getEntry());
 
         mAutoBrightnessPreference = (SwitchPreference) findPreference(KEY_AUTO_BRIGHTNESS);
         if (mAutoBrightnessPreference != null && isAutomaticBrightnessAvailable(getResources())) {
@@ -762,6 +770,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Integer.valueOf((String) objValue));
             mDashboardColumns.setValue(String.valueOf(objValue));
             mDashboardColumns.setSummary(mDashboardColumns.getEntry());
+            return true;
+        }
+        if (preference == mDashFontStyle) {
+            int val = Integer.parseInt((String) objValue);
+            int index = mDashFontStyle.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DASHBOARD_FONT_STYLE, val);
+            mDashFontStyle.setSummary(mDashFontStyle.getEntries()[index]);
             return true;
         }
         return true;
