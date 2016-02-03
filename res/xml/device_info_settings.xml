@@ -85,6 +85,11 @@
         <org.cyanogenmod.internal.cmparts.CMPartsPreference
                 android:key="contributors" />
 
+        <!-- Changelog -->
+        <PreferenceScreen android:key="changelog"
+                android:title="@string/changelog_crdroid_title"
+                android:fragment="com.android.settings.crdroid.Changelog" />
+
         <!-- Device hardware model -->
         <Preference android:key="device_model"
                 android:enabled="false"
