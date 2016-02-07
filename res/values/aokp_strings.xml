@@ -553,4 +553,7 @@
     <string name="emotionupdater">Updater</string>
     <string name="emotionupdater_summary">Stay up to date with the latest features and fixes</string>
 
+    <!-- Dev Options Enabled by Default -->
+    <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
+
 </resources>
