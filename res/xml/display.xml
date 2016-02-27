@@ -96,6 +96,16 @@
                 android:title="@string/wifi_display_settings_title"
                 settings:keywords="@string/keywords_display_cast_screen"
                 android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
+
+        <ListPreference
+                android:key="dashboard_switches"
+                android:title="@string/dashboard_switches_title"
+                android:dialogTitle="@string/dashboard_switches_dialog_title"
+                android:entries="@array/dashboard_switches_entries"
+                android:entryValues="@array/dashboard_switches_values"
+                android:summary="@string/dashboard_switches_summary"
+                android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
