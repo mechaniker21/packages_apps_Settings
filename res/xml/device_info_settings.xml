@@ -92,11 +92,11 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
-        <!-- AOKP firmware version -->
-        <Preference android:key="aokp_version"
+        <!-- Emotion firmware version -->
+        <Preference android:key="emotion_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/aokp_version_title"
-                android:summary="@string/aokp_version_default"/>
+                android:title="@string/emotion_version_title"
+                android:summary="@string/emotion_version_default"/>
 
         <!-- Security patch level -->
         <Preference android:key="security_patch"
