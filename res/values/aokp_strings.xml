@@ -308,4 +308,8 @@
     <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
     <string name="dashboard_switches_dialog_title">Select switch state</string>
 
+    <!--Kcal Control-->
+    <string name="kcal_display">Color Control</string>
+    <string name="kcal_display_summary">Advanced display color settings</string>
+
 </resources>
