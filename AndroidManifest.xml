@@ -2649,6 +2649,12 @@
             </intent-filter>
         </activity>
 
+        <!-- Kernel Adiutor -->
+        <activity android:name="com.grarak.kerneladiutor.MainActivity"/>
+
+        <!-- Color Control -->
+        <activity android:name="re.codefi.savoca.kcal.MainActivity"/>
+
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
                 android:exported="false"
