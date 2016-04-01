@@ -79,14 +79,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.internal.logging.MetricsLogger;
+import com.android.internal.util.aokp.AbstractAsyncSuCMDProcessor;
+import com.android.internal.util.aokp.CMDProcessor;
+import com.android.internal.util.aokp.Helpers;
 import com.android.settings.fuelgauge.InactiveApps;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
-import com.android.settings.util.AbstractAsyncSuCMDProcessor;
-import com.android.settings.util.CMDProcessor;
-import com.android.settings.util.Helpers;
 import cyanogenmod.providers.CMSettings;
 
 import java.io.File;

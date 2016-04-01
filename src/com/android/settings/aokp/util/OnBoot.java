@@ -9,8 +9,8 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.android.internal.logging.MetricsLogger;
+import com.android.internal.util.aokp.CMDProcessor;
 import com.android.settings.R;
-import com.android.settings.util.CMDProcessor;
 
 import java.io.IOException;
 import java.util.List;
