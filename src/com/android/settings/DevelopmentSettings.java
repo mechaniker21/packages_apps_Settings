@@ -140,6 +140,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final String OPENGL_TRACES_PROPERTY = "debug.egl.trace";
     private static final String TUNER_UI_KEY = "tuner_ui";
     private static final String COLOR_TEMPERATURE_PROPERTY = "persist.sys.debug.color_temp";
+    private static final String DOZE_POWERSAVE_PROPERTY = "persist.sys.doze_powersave";
 
     private static final String DEBUG_APP_KEY = "debug_app";
     private static final String WAIT_FOR_DEBUGGER_KEY = "wait_for_debugger";
@@ -216,6 +217,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private static final String SELINUX = "selinux";
 
+    private static final String DOZE_POWERSAVE_KEY = "doze_powersave";
+
     private static final int RESULT_DEBUG_APP = 1000;
     private static final int RESULT_MOCK_LOCATION_APP = 1001;
 
@@ -283,6 +286,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private SwitchPreference mShowHwLayersUpdates;
     private SwitchPreference mDebugLayout;
     private SwitchPreference mForceRtlLayout;
+    private SwitchPreference mDozePowersave;
     private ListPreference mDebugHwOverdraw;
     private ListPreference mLogdSize;
     private ListPreference mUsbConfiguration;
@@ -543,6 +547,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             removePreference(COLOR_TEMPERATURE_KEY);
             mColorTemperaturePreference = null;
         }
+
+        mDozePowersave = findAndInitSwitchPref(DOZE_POWERSAVE_KEY);
     }
 
     private ListPreference addListPreference(String prefKey) {
@@ -784,6 +790,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         if (mColorTemperaturePreference != null) {
             updateColorTemperature();
         }
+        updateDozePowersaveOptions();
     }
 
     private void writeAdvancedRebootOptions() {
@@ -1311,6 +1318,15 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             }
         } catch (RemoteException ex) {
         }
+    }
+
+    private void updateDozePowersaveOptions() {
+        updateSwitchPreference(mDozePowersave, SystemProperties.getBoolean(DOZE_POWERSAVE_PROPERTY, false));
+    }
+
+    private void writeDozePowersaveOptions() {
+        SystemProperties.set(DOZE_POWERSAVE_PROPERTY, mDozePowersave.isChecked() ? "true" : "false");
+        pokeSystemProperties();
     }
 
     private void updateHardwareUiOptions() {
@@ -2154,6 +2170,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 }
                 mUpdateRecoveryDialog.setOnDismissListener(this);
             }
+        } else if (preference == mDozePowersave) {
+            writeDozePowersaveOptions();
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
