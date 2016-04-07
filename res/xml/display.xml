@@ -58,7 +58,7 @@
         <PreferenceScreen
                 android:key="doze_fragment"
                 android:title="@string/doze_title"
-                android:fragment="com.android.settings.cmremix.AmbientSettings" />
+                android:fragment="com.android.settings.emotion.AmbientSettings" />
 
         <PreferenceScreen
                 android:key="display_rotation"
