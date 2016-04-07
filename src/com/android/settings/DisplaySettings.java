@@ -102,6 +102,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_LIFT_TO_WAKE = "lift_to_wake";
+    private static final String KEY_DOZE = "doze";
     private static final String KEY_TAP_TO_WAKE = "tap_to_wake";
     private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness";
     private static final String KEY_AUTO_ROTATE = "auto_rotate";
@@ -122,10 +123,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private FontDialogPreference mFontSizePref;
     private PreferenceScreen mDisplayRotationPreference;
 
-    private static final String KEY_DOZE_CATEGORY = "category_doze_options";
-    private static final String KEY_DOZE = "doze";
-    private static final String KEY_ADVANCED_DOZE_OPTIONS = "advanced_doze_options";
-
     private final Configuration mCurConfig = new Configuration();
 
     private ListPreference mScreenTimeoutPreference;
@@ -133,6 +130,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private Preference mScreenSaverPreference;
     private SwitchPreference mAccelerometer;
     private SwitchPreference mLiftToWakePreference;
+    private SwitchPreference mDozePreference;
     private SwitchPreference mTapToWakePreference;
     private SwitchPreference mProximityCheckOnWakePreference;
     private SwitchPreference mAutoBrightnessPreference;
@@ -163,17 +161,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         return MetricsLogger.DISPLAY;
     }
 
-    private PreferenceCategory mDozeCategory;
-    private SwitchPreference mDozePreference;
-    private PreferenceScreen mAdvancedDozeOptions;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final Activity activity = getActivity();
         final ContentResolver resolver = activity.getContentResolver();
         addPreferencesFromResource(R.xml.display);
-        PreferenceScreen prefSet = getPreferenceScreen();
 
         PreferenceCategory displayPrefs = (PreferenceCategory)
                 findPreference(KEY_CATEGORY_DISPLAY);
@@ -276,13 +269,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
 
-        mDozeCategory = (PreferenceCategory) findPreference(KEY_DOZE_CATEGORY);
-        if (Utils.isDozeAvailable(activity)) {
-            // Doze master switch
-            mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
+        mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
+        if (mDozePreference != null && Utils.isDozeAvailable(activity)) {
             mDozePreference.setOnPreferenceChangeListener(this);
         } else {
-            prefSet.removePreference(mDozeCategory);
+            if (displayPrefs != null && mDozePreference != null) {
+                displayPrefs.removePreference(mDozePreference);
+            }
         }
 
         mCameraGesturePreference = (SwitchPreference) findPreference(KEY_CAMERA_GESTURE);
@@ -851,7 +844,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     }
                     if (!Utils.isDozeAvailable(context)) {
                         result.add(KEY_DOZE);
-                        result.add(KEY_ADVANCED_DOZE_OPTIONS);
                     }
                     if (!isTapToWakeAvailable(context.getResources())) {
                         result.add(KEY_TAP_TO_WAKE);
