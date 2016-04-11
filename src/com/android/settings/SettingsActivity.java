@@ -72,6 +72,9 @@ import com.android.settings.accessibility.CaptionPropertiesFragment;
 import com.android.settings.accounts.AccountSettings;
 import com.android.settings.accounts.AccountSyncSettings;
 import com.android.settings.applications.DrawOverlayDetails;
+import com.android.settings.emotion.Navbar;
+import com.android.settings.emotion.FlingSettings;
+import com.android.settings.emotion.SmartbarSettings;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ManageAssist;
@@ -390,7 +393,10 @@ public class SettingsActivity extends Activity
             ContributorsCloudFragment.class.getName(),
             NotificationManagerSettings.class.getName(),
             LiveLockScreenSettings.class.getName(),
-            WeatherServiceSettings.class.getName()
+            WeatherServiceSettings.class.getName(),
+            Navbar.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName()
     };
 
 

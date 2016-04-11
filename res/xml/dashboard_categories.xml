@@ -106,6 +106,14 @@
                 android:targetPackage="com.aokp.romcontrol" />
         </dashboard-tile>
 
+        <!-- Nav Bar -->
+        <dashboard-tile
+                android:id="@+id/navbar"
+                android:title="@string/emotion_navbar_settings"
+                android:fragment="com.android.settings.emotion.Navbar"
+                android:icon="@drawable/emotion_navbar_icon"
+                />
+
         <!-- Sound -->
         <dashboard-tile
                 android:id="@+id/sound_settings"
