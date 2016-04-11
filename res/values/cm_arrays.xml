@@ -328,9 +328,26 @@
         <item>@string/app_ops_permissions_always_ask</item>
     </string-array>
 
-    <!-- Gamma calibration descriptors, deliberately empty as string values populated via
-         per-device overlay. Required to build on non-hardware tunable devices -->
-    <string-array name="gamma_descriptors" translatable="false">
+    <string-array name="hardware_keys_action_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="power_menu_actions_array" translatable="false">
+        <item>power</item>
+        <item>reboot</item>
+        <item>screenshot</item>
+        <item>airplane</item>
+        <item>users</item>
+        <item>bugreport</item>
+        <item>silent</item>
     </string-array>
 
     <!-- Values for screen color  -->
