@@ -39,7 +39,6 @@ public class BootReceiver extends BroadcastReceiver {
     public void onReceive(Context ctx, Intent intent) {
         if (!hasRestoredTunable(ctx)) {
             /* Restore the hardware tunable values */
-            ButtonSettings.restoreKeyDisabler(ctx);
             VibratorIntensity.restore(ctx);
             InputMethodAndLanguageSettings.restore(ctx);
             setRestoredTunable(ctx);
