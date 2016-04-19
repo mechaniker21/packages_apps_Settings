@@ -2256,6 +2256,9 @@
                 android:value="com.android.settings.emotion.FlingSettings" />
         </activity>
 
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name=".emotion.HAFRAppListActivity" />
+
         <!-- AOKP activities End -->
 
         <!-- CyanogenMod activities Start -->
