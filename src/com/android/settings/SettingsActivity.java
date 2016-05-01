@@ -143,6 +143,8 @@ import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
+import com.android.settings.emotion.AmbientSettings;
+
 import com.android.settings.slim.dslv.*;
 import com.android.settings.slim.fragments.*;
 import com.android.settings.slim.util.*;
@@ -399,7 +401,8 @@ public class SettingsActivity extends Activity
             Navbar.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
-            HeadsUpSettings.class.getName()
+            HeadsUpSettings.class.getName(),
+            AmbientSettings.class.getName()
     };
 
 
