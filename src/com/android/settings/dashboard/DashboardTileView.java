@@ -34,7 +34,7 @@ import com.android.settings.ProfileSelectDialog;
 import com.android.settings.R;
 import com.android.settings.Utils;
 
-import com.android.internal.util.temasek.FontHelper;
+import com.android.internal.util.aokp.FontHelper;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
