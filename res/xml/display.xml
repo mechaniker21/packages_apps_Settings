@@ -107,6 +107,20 @@
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
                 android:defaultValue="false"/>
 
+
+        <!-- Cast screen -->
+        <PreferenceScreen
+                android:key="wifi_display"
+                android:title="@string/wifi_display_settings_title"
+                settings:keywords="@string/keywords_display_cast_screen"
+                android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:key="dashboard_category"
+            android:title="@string/dashboard_category">
+
         <ListPreference
                 android:key="dashboard_columns"
                 android:title="@string/dashboard_columns_title"
@@ -115,13 +129,6 @@
                 android:entryValues="@array/dashboard_columns_values"
                 android:summary="@string/dashboard_columns_summary"
                 android:persistent="false" />
-
-        <!-- Cast screen -->
-        <PreferenceScreen
-                android:key="wifi_display"
-                android:title="@string/wifi_display_settings_title"
-                settings:keywords="@string/keywords_display_cast_screen"
-                android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
 
         <ListPreference
                 android:key="dashboard_switches"

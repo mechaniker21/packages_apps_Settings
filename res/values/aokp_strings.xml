@@ -282,6 +282,7 @@
     <string name="ok_string">Ok</string>
 
     <!-- Optional Dashboard Switches -->
+    <string name="dashboard_category">Dashboard settings</string>
     <string name="dashboard_switches_title">Dashboard Switches</string>
     <string name="dashboard_switches_off">Switches Off</string>
     <string name="dashboard_switches_on">Switches On</string>
