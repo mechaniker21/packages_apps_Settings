@@ -52,6 +52,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import cyanogenmod.providers.CMSettings;
+import cyanogenmod.providers.WeatherContract;
 import cyanogenmod.weather.CMWeatherManager;
 import cyanogenmod.weatherservice.WeatherProviderService;
 import org.xmlpull.v1.XmlPullParser;
@@ -60,6 +61,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import static org.cyanogenmod.internal.logging.CMMetricsLogger.WEATHER_SETTINGS;
 
@@ -108,8 +110,7 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
         updateAdapter();
         registerPackageMonitor();
 
-        mTemperatureUnit.setValue(String.valueOf(
-                    CMWeatherManager.getSelectedTemperatureUnit(mContext)));
+        mTemperatureUnit.setValue(String.valueOf(getSelectedTemperatureUnit(mContext)));
     }
 
     @Override
@@ -235,6 +236,26 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
             ps.removePreference(mProvidersCategory);
         }
 
+    }
+
+    /**
+     * Gets the currently selected temperature unit.
+     * If none is selected yet, returns a unit appropriate for the current locale
+     */
+    public static int getSelectedTemperatureUnit(Context context) {
+        int tempUnit = CMSettings.Global.getInt(context.getContentResolver(),
+                CMSettings.Global.WEATHER_TEMPERATURE_UNIT, -1);
+        if (tempUnit != -1) {
+            return tempUnit;
+        }
+
+        Locale locale = context.getResources().getConfiguration().locale;
+        boolean useFahrenheit = locale.equals(Locale.US)
+                || locale.toString().equals("ms_MY") // Malaysia
+                || locale.toString().equals("si_LK"); // Sri Lanka
+        return useFahrenheit
+                ? WeatherContract.WeatherColumns.TempUnit.FAHRENHEIT
+                : WeatherContract.WeatherColumns.TempUnit.CELSIUS;
     }
 
     private static class WeatherProviderPreference extends Preference
