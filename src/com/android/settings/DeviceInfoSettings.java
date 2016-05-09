@@ -79,8 +79,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_QGP_VERSION = "qgp_version";
     private static final String PROPERTY_QGP_VERSION = "persist.qgp.version";
     private static final String KEY_EMOTIONUPDATER = "emotionupdater";
+    private static final String KEY_EMOTIONUPDATER_PACKAGE_NAME = "com.emotion.ota";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
+
+    private PreferenceScreen mEmotionUpdater;
 
     long[] mHits = new long[3];
     int mDevHitCountdown;
@@ -109,6 +112,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         mUm = UserManager.get(getActivity());
 
         addPreferencesFromResource(R.xml.device_info_settings);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         setStringSummary(KEY_FIRMWARE_VERSION, Build.VERSION.RELEASE);
         findPreference(KEY_FIRMWARE_VERSION).setEnabled(true);
@@ -147,6 +151,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         } else if (!SELinux.isSELinuxEnforced()) {
             String status = getResources().getString(R.string.selinux_status_permissive);
             setStringSummary(KEY_SELINUX_STATUS, status);
+        }
+
+        //Remove EmotionOTA if package is removed
+        mEmotionUpdater = (PreferenceScreen) findPreference(KEY_EMOTIONUPDATER);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_EMOTIONUPDATER_PACKAGE_NAME)) {
+            prefSet.removePreference(mEmotionUpdater);
         }
 
         // Remove selinux information if property is not present

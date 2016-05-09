@@ -22,7 +22,7 @@
     <string name="header_category_emotion">Extras</string>
 
     <!-- Updater -->
-    <string name="duupdater">Actualizaciones</string>
-    <string name="duupdater_summary">Manténgase al día con las últimas características y correcciones</string>
+    <string name="emotionupdater">Actualizaciones</string>
+    <string name="emotionupdater_summary">Manténgase al día con las últimas características y correcciones</string>
 
 </resources>
