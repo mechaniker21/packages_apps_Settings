@@ -571,6 +571,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
     private String getMemInfo() {
         String result = null;
+        BufferedReader reader = null;
 
         try {
             /* /proc/meminfo entries follow this format:
