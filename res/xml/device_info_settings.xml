@@ -55,13 +55,6 @@
                 android:title="@string/changelog_crdroid_title"
                 android:fragment="com.android.settings.crdroid.Changelog" />
 
-
-        <!-- Contributors cloud -->
-        <PreferenceScreen android:key="contributors_cloud"
-            android:title="@string/contributors_cloud_fragment_title"
-            android:fragment="com.android.settings.contributors.ContributorsCloudFragment" >
-        </PreferenceScreen>
-
         <!-- Device name -->
         <Preference android:key="device_name"
                 style="?android:preferenceInformationStyle"
