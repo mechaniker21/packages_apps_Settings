@@ -87,8 +87,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_CPU = "device_cpu";
     private static final String KEY_DEVICE_MEMORY = "device_memory";
     private static final String KEY_EMOTIONUPDATER = "emotionupdater";
+    private static final String KEY_EMOTIONUPDATER_PACKAGE_NAME = "com.emotion.ota";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
+
+    private PreferenceScreen mEmotionUpdater;
 
     long[] mHits = new long[3];
     int mDevHitCountdown;
@@ -109,6 +112,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.device_info_settings);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         setStringSummary(KEY_FIRMWARE_VERSION, Build.VERSION.RELEASE);
         findPreference(KEY_FIRMWARE_VERSION).setEnabled(true);
@@ -149,6 +153,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
         setStringSummary(KEY_DEVICE_NAME, Build.PRODUCT);
         removePreferenceIfBoolFalse(KEY_DEVICE_NAME, R.bool.config_displayDeviceName);
+
+        //Remove EmotionOTA if package is removed
+        mEmotionUpdater = (PreferenceScreen) findPreference(KEY_EMOTIONUPDATER);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_EMOTIONUPDATER_PACKAGE_NAME)) {
+            prefSet.removePreference(mEmotionUpdater);
+        }
 
         // Remove selinux information if property is not present
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SELINUX_STATUS,

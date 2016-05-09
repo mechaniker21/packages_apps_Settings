@@ -26,7 +26,7 @@
         <PreferenceScreen
             android:key="emotionupdater"
             android:title="@string/emotionupdater"
-            android:summary="@string/duupdater_summary">
+            android:summary="@string/emotionupdater_summary">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.emotion.ota"
                     android:targetClass="com.emotion.ota.MainActivity" />
