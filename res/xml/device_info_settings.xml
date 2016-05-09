@@ -17,6 +17,21 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+        <!-- Changelog -->
+        <PreferenceScreen android:key="changelog"
+                android:title="@string/changelog_crdroid_title"
+                android:fragment="com.android.settings.crdroid.Changelog" />
+
+        <!-- Emotion Updater -->
+        <PreferenceScreen
+            android:key="emotionupdater"
+            android:title="@string/emotionupdater"
+            android:summary="@string/duupdater_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.emotion.ota"
+                    android:targetClass="com.emotion.ota.MainActivity" />
+        </PreferenceScreen>
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
@@ -51,11 +66,6 @@
         <PreferenceScreen android:key="device_feedback"
                 android:title="@string/device_feedback">
         </PreferenceScreen>
-
-        <!-- Changelog -->
-        <PreferenceScreen android:key="changelog"
-                android:title="@string/changelog_crdroid_title"
-                android:fragment="com.android.settings.crdroid.Changelog" />
 
         <!-- Device name -->
         <Preference android:key="device_name"

@@ -553,4 +553,8 @@
     <!-- Hide apps from recents -->
     <string name="hide_from_recents_add_app">Add App</string>
 
+    <!-- DU Updater -->
+    <string name="duupdater">Updater</string>
+    <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
+
 </resources>
