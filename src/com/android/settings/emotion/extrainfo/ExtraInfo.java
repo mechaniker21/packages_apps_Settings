@@ -125,7 +125,7 @@ public class ExtraInfo {
 
     public List<String> getProcCpuInfo() {      return getProc("cpuinfo"); }
 
-    public String getProcCpuDescription() {     return getProcCpuField("Processor"); }
+    public String getProcCpuDescription() {     return getProcCpuField("model name"); }
     public String getProcCpuBogoMips() {        return getProcCpuField("BogoMIPS"); }
     public String getProcCpuFeatures() {        return getProcCpuField("Features"); }
     public String getProcCpuImplementer() {     return getProcCpuField("CPU implementer"); }
