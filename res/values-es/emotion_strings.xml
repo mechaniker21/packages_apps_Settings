@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 The Android Open Source Project
+     Copyright (C) 2015 AOKP
+     Copyright (C) 2016 Emotroid Team
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About phone screen, Emotion version -->
+  <string name="emotion_version_title">Emotion Versión</string>
+  <string name="emotion_version_default">Desconocida</string>
+  <!-- Rom Control -->
+  <string name="rom_control_title">ROM control</string>
+  <!-- SuperSU -->
+  <string name="supersu_title">SuperSU</string>
+  <!-- Viper4Android -->
+  <string name="viper_title">Viper4Android</string>
+  <!-- Color Picker -->
+  <string name="dialog_color_picker">Selector de color</string>
+  <string name="press_color_to_apply">Pulsa sobre el color para aplicar</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="set">Aplicar</string>
+  <string name="color_default">Predeterminado</string>
+  <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+  <string name="show_cpu_info">Mostrar información de la CPU</string>
+  <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+  <string name="show_cpu_info_summary">Superposición en pantalla mostrando información actual de la CPU</string>
+  <!-- long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">Long press back button timeout</string>
+  <string name="timeout_2000">2 segundos (por defecto)</string>
+  <string name="timeout_1500">1,5 segundos</string>
+  <string name="timeout_1000">1 segundo</string>
+  <string name="timeout_500">0,5 segundos</string>
+  <!-- Battery saver color -->
+  <string name="battery_saver_color_title">Color de advertencia</string>
+  <string name="battery_saver_color_summary">Activar barra de estado naranja y barra de navegación naranja cuando se activa el ahorro de batería</string>
+  <!-- Unaccounted and overcounted battery stats -->
+  <string name="show_unac_and_overcounted_stats_title">Mostrar estadísticas de no contados/sobrecontados</string>
+  <string name="show_unac_and_overcounted_stats_summary">Mostrar en las estadísticas de la batería uso no contabilizado y sobre uso contabilizado.</string>
+  <!-- Slim Lockscreen shorcut. -->
+  <string name="shortcut_action_none">Ninguno</string>
+  <string name="shortcut_action_app">Aplicación personalizada</string>
+  <string name="shortcut_action_home">Inicio</string>
+  <string name="shortcut_action_back">Atrás</string>
+  <string name="shortcut_action_menu">Menú</string>
+  <string name="shortcut_action_ime">Abrir IME Switcher</string>
+  <string name="shortcut_action_power_menu">Menu de apagado</string>
+  <string name="shortcut_action_recent">Recientes</string>
+  <string name="shortcut_action_power">Pantalla apagada</string>
+  <string name="shortcut_action_search">Búsqueda en aplicación</string>
+  <string name="shortcut_action_longpress">Pulsación larga:</string>
+  <string name="shortcut_action_select_action_longpress">Elija acción para la pulsación larga:</string>
+  <string name="shortcut_action_select_action">Elegir acción:</string>
+  <string name="shortcut_action_select_action_newaction">Elija nueva acción:</string>
+  <string name="shortcut_action_reset">Resetear</string>
+  <string name="shortcut_action_add">Añadir</string>
+  <string name="shortcut_action_reset_message">¿Restablecer todas las entradas por defecto?</string>
+  <string name="shortcut_action_max">Se ha alcanzado el tamaño máximo de las entradas</string>
+  <string name="shortcut_action_warning">Advertencia</string>
+  <string name="shortcut_action_warning_message">No es posible eliminar la última entrada</string>
+  <string name="shortcut_action_disable_message">Desacivar\nAñadir una entrada para activar esta función</string>
+  <string name="shortcut_image_not_valid">La aplicación solicitada no devolvió un icono válido o no es compatible con la imagen. Usa otra aplicación.</string>
+  <string name="shortcut_duplicate_entry">La acción seleccionada no puede añadirse dos veces</string>
+  <string name="shortcut_action_help_shortcut">acceso directo</string>
+  <string name="shortcut_action_help_button">botón</string>
+  <string name="shortcut_action_help_app">aplicación</string>
+  <string name="shortcut_action_help_icon">, mientras seleccione el icono se abrirá la opción de personalización</string>
+  <string name="shortcut_action_help_main">To add a %1$s, select the Add icon. Once a %1$s is added, selecting the row will change the target%2$s\n\nTo remove a %1$s, swipe the row horizontally left or right. Re-order a %1$s in the list by vertically dragging the anchor on the left.\n\nTo clear or reset to defaults, select the Reset icon.</string>
+  <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
+  <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Removing every %1$s in the list will disable the second pie layer entirely.</string>
+  <string name="shortcuts_applications">Aplicaciones</string>
+  <string name="shortcuts_select_custom_app_title">Seleccione aplicación personalizada</string>
+  <string name="shortcuts_icon_picker_type">Selecciona el tipo de icono:</string>
+  <string name="shortcuts_icon_default">Predeterminado</string>
+  <string name="shortcuts_icon_presets">Iconos del sistema</string>
+  <string name="shortcuts_icon_custom">Galería</string>
+  <string name="shortcuts_icon_picker_choose_icon_title">Seleccione el icono</string>
+  <string name="shortcuts_icon_picker_alarm">Alarma</string>
+  <string name="shortcuts_icon_picker_andy">Andy</string>
+  <string name="shortcuts_icon_picker_battery">Batería</string>
+  <string name="shortcuts_icon_picker_browser">Navegador</string>
+  <string name="shortcuts_icon_picker_calendar">Calendario</string>
+  <string name="shortcuts_icon_picker_camera">Cámara</string>
+  <string name="shortcuts_icon_picker_cloud">Nube</string>
+  <string name="shortcuts_icon_picker_contact">Contacto</string>
+  <string name="shortcuts_icon_picker_directdial">Marcación directa</string>
+  <string name="shortcuts_icon_picker_directmessage">Mensaje directo</string>
+  <string name="shortcuts_icon_picker_drive">Drive</string>
+  <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+  <string name="shortcuts_icon_picker_email">Correo electrónico</string>
+  <string name="shortcuts_icon_picker_email2">Correo electrónico alternativo</string>
+  <string name="shortcuts_icon_picker_evernote">Evernote</string>
+  <string name="shortcuts_icon_picker_facebook">Facebook</string>
+  <string name="shortcuts_icon_picker_favorite">Favoritos</string>
+  <string name="shortcuts_icon_picker_file_browser">Explorador de archivos</string>
+  <string name="shortcuts_icon_picker_file_browser2">Explorador de archivos alternativo</string>
+  <string name="shortcuts_icon_picker_fitness">Fitness</string>
+  <string name="shortcuts_icon_picker_gallery">Galería</string>
+  <string name="shortcuts_icon_picker_gears">Gears</string>
+  <string name="shortcuts_icon_picker_google_small">Google</string>
+  <string name="shortcuts_icon_picker_gplus">Google Plus</string>
+  <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+  <string name="shortcuts_icon_picker_help">Ayuda</string>
+  <string name="shortcuts_icon_picker_joystick">Joystick</string>
+  <string name="shortcuts_icon_picker_key">Claves/cuentas</string>
+  <string name="shortcuts_icon_picker_laptop">Portátil</string>
+  <string name="shortcuts_icon_picker_notes">Notas</string>
+  <string name="shortcuts_icon_picker_luggage">Viajes</string>
+  <string name="shortcuts_icon_picker_maps">Mapas</string>
+  <string name="shortcuts_icon_picker_market">Market</string>
+  <string name="shortcuts_icon_picker_movie">Películas</string>
+  <string name="shortcuts_icon_picker_music">Música</string>
+  <string name="shortcuts_icon_picker_nav">Navegación</string>
+  <string name="shortcuts_icon_picker_phone">Teléfono</string>
+  <string name="shortcuts_icon_picker_package">Paquete</string>
+  <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+  <string name="shortcuts_icon_picker_play">Play</string>
+  <string name="shortcuts_icon_picker_pocket">Bolsillo</string>
+  <string name="shortcuts_icon_picker_quicksettings">Ajustes rápidos</string>
+  <string name="shortcuts_icon_picker_rss">RSS Feed</string>
+  <string name="shortcuts_icon_picker_sdcard">Tarjeta SD</string>
+  <string name="shortcuts_icon_picker_search">Buscar</string>
+  <string name="shortcuts_icon_picker_sms">Mensajería</string>
+  <string name="shortcuts_icon_picker_tasks">Tareas</string>
+  <string name="shortcuts_icon_picker_terminal">Terminal</string>
+  <string name="shortcuts_icon_picker_transit">Tránsito</string>
+  <string name="shortcuts_icon_picker_tv">TV</string>
+  <string name="shortcuts_icon_picker_twitter">Twitter</string>
+  <string name="shortcuts_icon_picker_unlock">Desbloquear</string>
+  <string name="airplay">Airplay</string>
+  <string name="android">Android</string>
+  <string name="badoo">Badoo</string>
+  <string name="battery">Batería</string>
+  <string name="bluetooth">Ajustes de Bluetooth</string>
+  <string name="bookmarks">Marcadores</string>
+  <string name="browser">Navegador</string>
+  <string name="browser2">Navegador2</string>
+  <string name="calculator">Calculadora</string>
+  <string name="calendar">Calendario</string>
+  <string name="calls">Llamadas</string>
+  <string name="camera">Cámara</string>
+  <string name="chrome">Chrome</string>
+  <string name="clock">Reloj</string>
+  <string name="cnn">Cnn</string>
+  <string name="deezer2">Deezer2</string>
+  <string name="deezer">Deezer</string>
+  <string name="dolphin2">Dolphin</string>
+  <string name="downloads">Descargas</string>
+  <string name="dropbox">Dropbox</string>
+  <string name="ebay">Ebay</string>
+  <string name="email">Correo electrónico</string>
+  <string name="evernote">Evernote</string>
+  <string name="explorer">Explorer</string>
+  <string name="falcon">Falcon</string>
+  <string name="fb">Facebook</string>
+  <string name="flipboard">Flipboard</string>
+  <string name="foursquare">Foursquare</string>
+  <string name="firefox">Firefox</string>
+  <string name="googlebuzz">Google buzz</string>
+  <string name="googledocs">Google docs</string>
+  <string name="googlewallet">Google wallet</string>
+  <string name="line">Line</string>
+  <string name="mic">Mic</string>
+  <string name="newyorktimes">New York times</string>
+  <string name="rootexplorer">Root explorer</string>
+  <string name="sim">SIM</string>
+  <string name="teamviewer">TeamViewer</string>
+  <string name="totalcommander">Total commander</string>
+  <string name="weather">El Tiempo</string>
+  <string name="golocker">Go locker</string>
+  <string name="googlecurrents">Google currents</string>
+  <string name="googletalk">Google Talk</string>
+  <string name="gosms">Go sms</string>
+  <string name="meebo">Meebo</string>
+  <string name="maps2">Maps2</string>
+  <string name="memorycleaner">Limpiador de memoria</string>
+  <string name="navigation">Navegación</string>
+  <string name="pulse">Pulse</string>
+  <string name="shazam">Shazam</string>
+  <string name="swiftkey">SwiftKey</string>
+  <string name="tmobile">T-mobile</string>
+  <string name="trash">Papelera</string>
+  <string name="games">Juegos</string>
+  <string name="gmail">Gmail</string>
+  <string name="docs">Documentos</string>
+  <string name="googledrive">Google Drive</string>
+  <string name="googleearth">Google earth</string>
+  <string name="googlehangouts">Google Hangouts</string>
+  <string name="googlekeep">Google keep</string>
+  <string name="googleplay">Google play</string>
+  <string name="googletranslate">Traductor de Google</string>
+  <string name="google">Google</string>
+  <string name="googleplus">Google Plus</string>
+  <string name="imdb">IMDB</string>
+  <string name="instagram">Instagram</string>
+  <string name="lastfm">Lastfm</string>
+  <string name="maps">Mapas</string>
+  <string name="messages">Mensajes</string>
+  <string name="music">Música</string>
+  <string name="mxplayer">Mxplayer</string>
+  <string name="notepad">Mensaje directo</string>
+  <string name="opera">Opera</string>
+  <string name="paint">Paint</string>
+  <string name="paypal">Paypal</string>
+  <string name="phone">Teléfono</string>
+  <string name="picasa">Picasa</string>
+  <string name="pictures2">Pictures2</string>
+  <string name="player_pro">Player pro</string>
+  <string name="playstation">Play station</string>
+  <string name="reddit">Reddit</string>
+  <string name="settings">Ajustes</string>
+  <string name="skype">Skype</string>
+  <string name="soundscloud">Sounds cloud</string>
+  <string name="spotifiy">Spotifiy</string>
+  <string name="tapatalk">Tapatalk</string>
+  <string name="tunein">TuneIn</string>
+  <string name="twitter">Twitter</string>
+  <string name="viber">Viber</string>
+  <string name="videocamera">Cámara de vídeo</string>
+  <string name="whatsapp">WhatsApp</string>
+  <string name="wifi">WiFI</string>
+  <string name="xda">XDA</string>
+  <string name="yahoo">Yahoo</string>
+  <string name="youtube">YouTube</string>
+  <string name="zedge">Zedge</string>
+  <!-- Lockscreen Shortcuts -->
+  <string name="lockscreen_shortcuts_title">Accesos directos</string>
+  <string name="lockscreen_shortcuts_summary">Ver o cambiar los accesos directos de la pantalla de bloqueo</string>
+  <string name="lockscreen_shorcuts_launch_type_title">Tipo de click en acceso directo</string>
+  <string name="lockscreen_shortcuts_single_tap">Click</string>
+  <string name="lockscreen_shortcuts_double_tap">Doble pulsación</string>
+  <string name="lockscreen_shortcuts_longpress">Pulsación larga</string>
+  <!-- Restart SystemUI -->
+  <string name="restart_systemui">Reiniciar SystemUI</string>
+  <!-- Selinux Switch -->
+  <string name="selinux_switch_title">Opciones de Selinux</string>
+  <string name="selinux_switch_summary">SELinux es un conjunto de modificaciones del kernel y herramientas de espacio de usuario. Cambiarlo puede causar efectos no deseados. Usar bajo su propio riesgo.</string>
+  <string name="selinux_title">Modo SELinux</string>
+  <string name="selinux_permissive_title">Permisivo</string>
+  <string name="selinux_enforcing_title">Obligatorio</string>
+  <string name="selinux_permissive_toast_title">SeLinux permisivo!</string>
+  <!--Performance/Kernel Aduitor-->
+  <string name="kernel_aduitor">Rendimiento</string>
+  <!-- Battery stats reset -->
+  <string name="battery_stats_reset">Resetear estadísticas</string>
+  <string name="battery_stats_message">Las estadísticas de la batería van a restablecerse</string>
+  <string name="ok_string">Ok</string>
+  <!-- Optional Dashboard Switches -->
+  <string name="dashboard_category">Configuraciones del panel de ajustes</string>
+  <string name="dashboard_switches_title">Dashboard Switches</string>
+  <string name="dashboard_switches_off">Interruptores desactivados</string>
+  <string name="dashboard_switches_on">Interruptores activados</string>
+  <string name="dashboard_switches_summary">Cambiar la posición de los interruptores del panel de ajustes</string>
+  <string name="dashboard_switches_dialog_title">Selector de estado de interruptor</string>
+  <!-- Dashboard columns -->
+  <string name="dashboard_columns_title">Columnas del panel de ajustes</string>
+  <string name="dashboard_columns_summary">Cambiar el número de columnas que aparecen en el panel de ajustes</string>
+  <string name="dashboard_columns_dialog_title">Seleccionar columnas del panel de ajustes</string>
+  <string name="dashboard_columns_default">Una (por defecto)</string>
+  <string name="dashboard_columns_two">Dos</string>
+  <string name="dashboard_columns_three">Tres</string>
+  <!--Kcal Control-->
+  <string name="kcal_display">Color Control</string>
+  <string name="kcal_display_summary">Ajustes avanzados de los colores de la pantalla</string>
+  <!-- Heads Up Timeout -->
+  <string name="heads_up_time_out_title">Tiempo de espera</string>
+  <string name="heads_up_time_out_summary">La notificación se mostrará durante <xliff:g id="number">%d </xliff:g> segundos</string>
+  <string name="heads_up_time_out_2sec">2 segundos</string>
+  <string name="heads_up_time_out_4sec">4 segundos</string>
+  <string name="heads_up_time_out_5sec">5 segundos</string>
+  <string name="heads_up_time_out_6sec">6 segundos</string>
+  <string name="heads_up_time_out_8sec">8 segundos</string>
+  <string name="heads_up_time_out_10sec">10 segundos</string>
+  <!-- Heads Up Snooze -->
+  <string name="heads_up_snooze">Hibernar</string>
+  <string name="heads_up_snooze_disabled_summary">Temporizador de hibernar está desactivado</string>
+  <string name="heads_up_snooze_summary">Swiping up on the heads up notification will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
+  <string name="heads_up_snooze_1min">1 minuto</string>
+  <string name="heads_up_snooze_5min">5 minutos</string>
+  <string name="heads_up_snooze_10min">10 minutos</string>
+  <string name="heads_up_snooze_15min">15 minutos</string>
+  <string name="heads_up_snooze_20min">20 minutos</string>
+  <string name="heads_up_snooze_30min">30 minutos</string>
+  <string name="heads_up_snooze_45min">45 minutos</string>
+  <string name="heads_up_snooze_60min">60 minutos</string>
+  <!-- Setting Checkbox title whether to enable doze powersave -->
+  <string name="doze_powersave_title">Ahorro de energía Doze</string>
+  <!-- setting Checkbox summary whether to enable doze powersave  -->
+  <string name="doze_powersave_summary">Permite que el dispositivo entrar en un estado de ultra baja potencia mientras duerme</string>
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Habilitado</string>
+  <string name="summary_doze_disabled">Deshabilitado</string>
+  <string name="doze_overwrite_value_title">Sobrescribir los valores por defecto</string>
+  <string name="doze_overwrite_value_summary">Permitir sobrescribir los valores por defecto con la configuración de usuario</string>
+  <string name="doze_pulse_title">Ajustes configurables del usuario</string>
+  <string name="doze_pulse_duration_in_title">Desvanecimiento hacia dentro</string>
+  <string name="doze_pulse_duration_visible_title">Duración visible</string>
+  <string name="doze_pulse_duration_out_title">Desvanecerse hacia fuera</string>
+  <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
+  <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
+  <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
+  <string name="doze_trigger_notification_title">Notification trigger</string>
+  <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
+  <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
+  <string name="doze_brightness_level_title">Nivel de brillo</string>
+  <string name="onehundred_ms">100 ms</string>
+  <string name="twofifty_ms">250 ms</string>
+  <string name="fivehundred_ms_default">500 ms (por defecto)</string>
+  <string name="sevenfifty_ms">750 ms</string>
+  <string name="one_second">1 s</string>
+  <string name="onehalf_second">1.5 s</string>
+  <string name="two_second">2 s</string>
+  <string name="twohalf_second">2.5 s</string>
+  <string name="three_second_default">3 s (por defecto)</string>
+  <string name="threehalf_second">3,5 s</string>
+  <string name="four_second">4 s</string>
+  <string name="fourhalf_second">4.5 s</string>
+  <string name="five_second">5 s</string>
+  <string name="doze_notification_color_invert_title">Inversión de notificación</string>
+  <string name="doze_notification_color_invert_summary_off">Las notificaciones no se invierten. Úsalo para temas oscuros.</string>
+  <string name="doze_notification_color_invert_summary_on">Las notificaciones serán invertidas. Úsalo para temas claros/stock.</string>
+  <!-- DoubleTap2Wake Doze -->
+  <string name="doze_wakeup_doubletap_title">Pulse dos veces para despertar en doze</string>
+  <string name="doze_wakeup_doubletap_summary_on">Requieren una doble pulsación para activar el dispositivo a una pantalla de pulso en doze</string>
+  <string name="doze_wakeup_doubletap_summary_off">Requieren un simple golpecito para despertar el dispositivo a una pantalla de pulso de doze (por defecto)</string>
+  <string name="emotion_navbar_settings">Barra de navegación</string>
+  <!-- Navigation Bar -->
+  <string name="navbar_interface_title">Interfaz</string>
+  <string name="navbar_size">Tamaño de la barra</string>
+  <string name="navbar_mode">Modo Navegación</string>
+  <string name="navbar_visibility">Activar la barra de navegación</string>
+  <string name="navigationbar_settings_title">Navegación</string>
+  <string name="aosp_navigation_bar">Barra de navegación</string>
+  <string name="aosp_navigation_bar_settings">Configuración de la barra de navegación</string>
+  <string name="navigationbar_settings_summary">Personalizar el comportamiento y estilo de navegación</string>
+  <string name="navbar_general_title">Opciones avanzadas</string>
+  <string name="navigation_bar_left_title">Modo para zurdos</string>
+  <string name="navigation_bar_left_summary">Coloque la barra de navegación en el lado izquierdo de la pantalla en modo apaisado</string>
+  <string name="info_pref_note_title">Aviso</string>
+  <string name="smartbar_interface">SmartBar</string>
+  <string name="icon_pack_picker_dialog_title">Paquetes de iconos</string>
+  <!-- Actions dialog and default task values set in ActionPreference xml-->
+  <string name="choose_action_title">Elegir acción</string>
+  <string name="action_entry_default_action">Ajustes predeterminados</string>
+  <string name="action_entry_select_app">Selecciona una aplicación</string>
+  <string name="action_entry_custom_action">Seleccione una acción personalizada</string>
+  <string name="action_value_default_action">acción por defecto</string>
+  <string name="action_value_select_app">action_app</string>
+  <string name="action_value_custom_action">action_custom</string>
+  <string name="action_value_default_action">acción por defecto</string>
+  <string name="action_value_select_app">action_app</string>
+  <string name="action_value_back">task_back</string>
+  <string name="action_value_home">task_home</string>
+  <string name="action_value_search_assist">task_assist</string>
+  <string name="action_value_recent_apps">task_recents</string>
+  <string name="action_value_voice_search">task_voice_search</string>
+  <string name="action_value_menu">task_menu</string>
+  <!-- Fling -->
+  <string name="fling_settings">Ajustes de Fling</string>
+  <string name="fling_interface">Fling gesture interface</string>
+  <string name="fling_enable_title">Enable Fling</string>
+  <string name="fling_back_home_policy">Back and Home are required to be set at all times. To change a Back or Home assignment, set the desired assignment first</string>
+  <string name="fling_split_bar_policy">When only a right or left action is assigned, the action applies to the full bar</string>
+  <string name="fling_def_summary">No action set</string>
+  <string name="fling_swipe_actions">Swipe gestures</string>
+  <string name="fling_tap_actions">Tap gestures</string>
+  <string name="fling_short_swipe_right">Right short swipe</string>
+  <string name="fling_short_swipe_left">Left short swipe</string>
+  <string name="fling_long_swipe_right">Right long swipe</string>
+  <string name="fling_long_swipe_left">Left long swipe</string>
+  <string name="fling_right_up_swipe">Right side swipe up</string>
+  <string name="fling_left_up_swipe">Left side swipe up</string>
+  <string name="fling_single_tap">Single tap right</string>
+  <string name="fling_double_tap">Double tap right</string>
+  <string name="fling_long_press">Long press right</string>
+  <string name="fling_single_left_tap">Single tap left</string>
+  <string name="fling_double_left_tap">Double tap left</string>
+  <string name="fling_long_left_press">Long press left</string>
+  <string name="long_swipe_portrait_title">Portrait</string>
+  <string name="long_swipe_landscape_title">Landscape</string>
+  <string name="right_swipe_title">Right swipe</string>
+  <string name="left_swipe_title">Left swipe</string>
+  <string name="up_swipe_title">Up swipe</string>
+  <string name="down_swipe_title">Down swipe</string>
+  <string name="long_swipe_reset">Reset</string>
+  <string name="fling_advanced">Advanced</string>
+  <string name="fling_long_swipe_title">Long swipe threshold</string>
+  <string name="fling_long_swipe_summary">Fine tune long swipe thresholds based on a percentage of Fling interface width or height</string>
+  <string name="fling_trails_enable_title">Habilitar rutas de gesto</string>
+  <string name="fling_trails_enable_summary">Mostrar un camino en gestos swipe</string>
+  <string name="fling_trails_color_title">Rastro de color</string>
+  <string name="fling_appearance">Apariencia</string>
+  <string name="fling_show_logo_title">Mostrar logo de Fling</string>
+  <string name="fling_animate_logo_title">Logo animado</string>
+  <string name="fling_animate_logo_summary">Logo animado en eventos táctiles</string>
+  <string name="fling_logo_color">Color de logo</string>
+  <string name="fling_logo_custom_logo_pick_title">Icono de logo personalizado</string>
+  <string name="fling_logo_custom_logo_image_pick_title">Icono de logo personalizado</string>
+  <string name="fling_logo_custom_logo_reset_title">Restablecer el icono de logo</string>
+  <string name="fling_show_ripple_title">Mostrar onda</string>
+  <string name="fling_show_ripple_summary">Efecto de onda al tocar</string>
+  <string name="fling_ripple_color">Color de onda</string>
+  <string name="fling_longpress_timeout_label_left">Menos retardo</string>
+  <string name="fling_longpress_timeout_label_right">Más retardo</string>
+  <string name="fling_longpress_title">Retraso en pulsación larga</string>
+  <string name="fling_longpress_summary">Aumentar o disminuir el tiempo que toma realizar una pulsación larga</string>
+  <!-- Pulse navigation bar music visualizer -->
+  <string name="pulse_help_policy_notice_title">Acerca de Pulse</string>
+  <string name="pulse_help_policy_notice_summary">Pulse is brilliant equalizer bar style audio visualization on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker. Be Sure To Play/Pause Track again After Resetting Pulse Dimension.</string>
+  <string name="pulse_settings">Pulse</string>
+  <string name="pulse_settings_summary">Visualización de audio en la barra de navegación</string>
+  <string name="fling_show_pulse_title">Mostrar Pulse</string>
+  <string name="fling_show_pulse_summary">Visualización de audio en la barra de navegación</string>
+  <string name="fling_pulse_color">Color de Pulse</string>
+  <string name="eos_fling_lavalamp_title">Turn on Lava Lamp</string>
+  <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
+  <string name="pulse_custom_dimen">Pulse Bar Width</string>
+  <string name="pulse_dimen0">Predeterminado</string>
+  <string name="pulse_dimen1">7dp</string>
+  <string name="pulse_dimen2">8dp</string>
+  <string name="pulse_dimen3">9dp</string>
+  <string name="pulse_dimen4">10dp</string>
+  <string name="pulse_dimen5">11dp</string>
+  <string name="pulse_dimen6">12dp</string>
+  <string name="pulse_dimen7">13dp</string>
+  <string name="pulse_dimen8">15dp</string>
+  <string name="pulse_dimen9">16dp</string>
+  <string name="pulse_dimen10">17dp</string>
+  <string name="pulse_dimen11">18dp</string>
+  <string name="pulse_dimen12">19dp</string>
+  <string name="pulse_dimen13">20dp</string>
+  <string name="pulse_dimen14">21dp</string>
+  <string name="pulse_dimen15">22dp</string>
+  <string name="pulse_dimen16">23dp</string>
+  <string name="pulse_dimen17">24dp</string>
+  <string name="pulse_dimen18">25dp</string>
+  <string name="pulse_dimen19">26dp</string>
+  <string name="pulse_custom_div">Pulse Bar Spacing</string>
+  <string name="default_div">Predeterminado</string>
+  <string name="div1">18</string>
+  <string name="div2">20</string>
+  <string name="div3">22</string>
+  <string name="div4">24</string>
+  <string name="div5">26</string>
+  <string name="div6">28</string>
+  <string name="div7">30</string>
+  <string name="div8">32</string>
+  <string name="default_fill">4dp(default)</string>
+  <string name="pulse_bar_style">Pulse Bar Style</string>
+  <string name="default_pulse_empty">1dp(default)</string>
+  <string name="pulse_filled_block_size">Block Size</string>
+  <string name="pulse_empty_block_size">Block Spacing</string>
+  <string name="pulse_fill1">5dp</string>
+  <string name="pulse_fill2">6dp</string>
+  <string name="pulse_fill3">7dp</string>
+  <string name="pulse_fill4">8dp</string>
+  <string name="pulse_empty1">2dp</string>
+  <string name="pulse_empty2">3dp</string>
+  <string name="pulse_empty3">4dp</string>
+  <string name="pulse_empty4">0(no spacing)</string>
+  <string name="factor0">Normal</string>
+  <string name="factor1">Relaxed</string>
+  <string name="factor2">Slow</string>
+  <string name="factor3">Hyper</string>
+  <string name="factor4">Insane</string>
+  <string name="pulse_custom_fudge_factor">Visualizer Sanity Level</string>
+  <!-- Navbar height -->
+  <string name="navigation_bar_size_title">Bar size</string>
+  <string name="portrait_title">Portrait height</string>
+  <string name="land_vert_title">Landscape width</string>
+  <string name="land_hor_title">Landscape height</string>
+  <string name="positive_done">Done</string>
+  <!-- SmartBar -->
+  <string name="smartbar_category">Smartbar</string>
+  <string name="smartbar_settings_title">Smartbar settings</string>
+  <string name="smartbar_editor_title">Toggle button editor</string>
+  <string name="smartbar_editor_summary">Medium press and drag to change position. Long press to show edit menu. Button position may be changed while menu is showing.</string>
+  <string name="smartbar_context_menu_position_title">Context buttons layout position</string>
+  <string name="smartbar_context_menu_position_summary">Set the position of contextual buttons such as menu and ime selector</string>
+  <string name="smartbar_right">Right</string>
+  <string name="smartbar_left">Left</string>
+  <string name="smartbar_button_animation_title">Button touch animation</string>
+  <string name="smartbar_button_animation_summary">Set the animation style of the primary buttons when they are pressed</string>
+  <string name="smartbar_button_animation_ripple">Ripple</string>
+  <string name="smartbar_button_animation_spring">Spring</string>
+  <string name="smartbar_factory_reset_title">Restore stock settings</string>
+  <string name="smartbar_factory_reset_summary">Smartbar will reset to a factory configuration</string>
+  <string name="smartbar_factory_reset_confirm">Are you sure you want to reset Smartbar to stock settings?</string>
+  <string name="smartbar_ime_action_title">Input method actions</string>
+  <string name="smartbar_ime_action_summary">Set what buttons to show when a on-screen keyboard is showing</string>
+  <string name="smartbar_ime_action_none">None</string>
+  <string name="smartbar_ime_action_arrows">Input arrows</string>
+  <string name="smartbar_ime_action_switcher">Keyboard switcher</string>
+  <!-- Hide apps from recents -->
+  <string name="hide_from_recents_add_app">Añadir aplicación</string>
+  <!-- DU Updater -->
+  <string name="emotionupdater">Actualizaciones</string>
+  <string name="emotionupdater_summary">Mantente al día con las últimas características y correcciones</string>
+  <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">No es necesario, Opciones de desarrollo ya están activadas por defecto.</string>
+  <!-- Advanced storage settings -->
+  <string name="storage_advanced_titlebar">Almacenamiento Avanzado</string>
+  <string name="storage_menu_advanced">Avanzado</string>
+  <!-- USB data automatic unlock -->
+  <string name="usb_data_auto_unlock_title">Desbloquear datos USB</string>
+  <string name="usb_data_auto_unlock_summary">Permitir el acceso de datos abierta al almacenamiento de su teléfono a través de USB (MTP, PTP)</string>
+  <string name="usb_data_auto_unlock_warning_summary">Su dispositivo establecerá conexiones sin protección, cada vez que se conecte a un PC. Pantallas de bloqueo con Pin/huella dactilar desactivarán esta opción automáticamente.\n\nÉsta característica es experimental, úsala con precaución.</string>
+</resources>
