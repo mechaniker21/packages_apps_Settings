@@ -1010,7 +1010,6 @@ public class InstalledAppDetails extends AppInfoBase
         public void onReceive(Context context, Intent intent) {
             if (getActivity() != null && !getActivity().isDestroyed()) {
                 updateForceStopButton(getResultCode() != Activity.RESULT_CANCELED);
-                refreshUi();
             }
         }
     };
