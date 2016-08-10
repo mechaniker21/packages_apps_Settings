@@ -330,8 +330,6 @@
         <item>@string/app_ops_permissions_always_ask</item>
     </string-array>
 
-    </string-array>
-
     <!-- Stylus Gestures -->
     <string-array name="gestures_entries" translatable="false">
         <item>@string/gestures_action_empty</item>
