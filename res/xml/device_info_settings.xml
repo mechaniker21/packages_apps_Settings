@@ -104,12 +104,12 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
-        <!-- Mod version -->
-        <Preference android:key="mod_version"
+        <!-- Emotion version -->
+        <Preference android:key="emotion_version"
                 android:enabled="false"
                 android:shouldDisableView="false"
-                android:title="@string/mod_version"
-                android:summary="@string/mod_version_default" />
+                android:title="@string/emotion_version_title"
+                android:summary="@string/emotion_version_default" />
 
         <!-- CyanogenMod API Version -->
         <Preference android:key="mod_api_level"
