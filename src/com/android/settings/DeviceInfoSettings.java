@@ -134,7 +134,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_MBN_VERSION, PROPERTY_MBN_VERSION);
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_MBN_VERSION,
                 PROPERTY_MBN_VERSION);
-        findPreference(KEY_EMOTION_VERSION).setSummary("ro.emotion.version");
+        setValueSummary(KEY_EMOTION_VERSION, "ro.emotion.version");
         findPreference(KEY_EMOTION_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         setExplicitValueSummary(KEY_MOD_API_LEVEL, constructApiLevelString());
