@@ -78,6 +78,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_API_LEVEL = "mod_api_level";
     private static final String KEY_QGP_VERSION = "qgp_version";
     private static final String PROPERTY_QGP_VERSION = "persist.qgp.version";
+    private static final String KEY_EMOTIONUPDATER = "emotionupdater";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 

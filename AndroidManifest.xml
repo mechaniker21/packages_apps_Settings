@@ -180,6 +180,9 @@
             </intent-filter>
         </activity>
 
+        <!-- Emotion OTA Update -->
+        <activity android:name="com.emotion.ota.MainActivity"/>
+
         <!-- Wireless Controls -->
 
         <activity android:name="Settings$WirelessSettingsActivity"

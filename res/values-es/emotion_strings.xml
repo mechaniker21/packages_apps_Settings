@@ -14,11 +14,15 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, Emotion version -->
-    <string name="emotion_version_title">Emotion Version</string>
-    <string name="emotion_version_default">Unknown</string>
+    <string name="emotion_version_title">Versión Emotion</string>
+    <string name="emotion_version_default">Desconocida</string>
+
+    <!-- Emotion Settings -->
+    <string name="emotion_settings_title">Emotion Control</string>
+    <string name="header_category_emotion">Extras</string>
 
     <!-- Updater -->
-    <string name="duupdater">Updates</string>
-    <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
+    <string name="duupdater">Actualizaciones</string>
+    <string name="duupdater_summary">Manténgase al día con las últimas características y correcciones</string>
 
 </resources>
