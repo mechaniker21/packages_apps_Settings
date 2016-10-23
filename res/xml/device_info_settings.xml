@@ -131,13 +131,6 @@
                 android:title="@string/emotion_version_title"
                 android:summary="@string/emotion_version_default" />
 
-        <!-- CyanogenMod API Version -->
-        <Preference android:key="mod_api_level"
-                android:enabled="false"
-                android:shouldDisableView="false"
-                android:title="@string/mod_api_level"
-                android:summary="@string/mod_api_level_default" />
-
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
                 android:title="@string/security_patch"
