@@ -66,47 +66,6 @@ public class MasterClearConfirm extends DialogFragment {
             fragment.setArguments(b);
 
             return fragment;
-
-            final PersistentDataBlockManager pdbManager = (PersistentDataBlockManager)
-                    getActivity().getSystemService(Context.PERSISTENT_DATA_BLOCK_SERVICE);
-
-            if (pdbManager != null && !pdbManager.getOemUnlockEnabled() &&
-                    Settings.Global.getInt(getActivity().getContentResolver(),
-                            Settings.Global.DEVICE_PROVISIONED, 0) != 0) {
-                // if OEM unlock is enabled, this will be wiped during FR process. If disabled, it
-                // will be wiped here, unless the device is still being provisioned, in which case
-                // the persistent data block will be preserved.
-                new AsyncTask<Void, Void, Void>() {
-                    int mOldOrientation;
-                    ProgressDialog mProgressDialog;
-
-                    @Override
-                    protected Void doInBackground(Void... params) {
-                        pdbManager.wipe();
-                        return null;
-                    }
-
-                    @Override
-                    protected void onPostExecute(Void aVoid) {
-                        mProgressDialog.hide();
-                        getActivity().setRequestedOrientation(mOldOrientation);
-                        doMasterClear();
-                    }
-
-                    @Override
-                    protected void onPreExecute() {
-                        mProgressDialog = getProgressDialog();
-                        mProgressDialog.show();
-
-                        // need to prevent orientation changes as we're about to go into
-                        // a long IO request, so we won't be able to access inflate resources on flash
-                        mOldOrientation = getActivity().getRequestedOrientation();
-                        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
-                    }
-                }.execute();
-            } else {
-                doMasterClear();
-            }
         }
 
         @Override
